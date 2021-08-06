@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.kuberkings.obaki.screens.CheckOutActivity" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.RestaurentDetailActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="100dp"
+                android:layout_height="match_parent">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_marginBottom="100dp"
+                        android:background="@drawable/dish"
+
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:padding="8dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:padding="2dp"
+                                app:tint="@color/white"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/btnBtn"
+                                android:src="@drawable/left_circle"
+                                android:layout_height="32dp" />
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:padding="2dp"
+                                android:layout_toLeftOf="@+id/rest_detail_save"
+                                app:tint="@color/white"
+                                android:layout_marginRight="16dp"
+                                android:src="@drawable/ic_share"
+                                android:layout_height="32dp" />
+
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:padding="2dp"
+                                android:layout_marginRight="20dp"
+                                app:tint="@color/white"
+                                android:id="@+id/rest_detail_save"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_iconly_bold_bookmark"
+                                android:layout_height="32dp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:layout_marginTop="32dp"
+                            android:text="Free Delivery"
+                            android:background="@drawable/green_round"
+
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Boon Lay Ho Huat Fried Prawn Noodle"
+                            android:textSize="24sp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:drawableTint="@color/white"
+                            android:drawablePadding="4dp"
+                            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                            android:text="03 Jameson Manors Apt. 177"
+
+                            android:layout_marginBottom="50dp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="60dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        app:cardCornerRadius="32dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            android:gravity="bottom"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+
+                                    android:textSize="12sp"
+                                    android:drawablePadding="8dp"
+                                    android:drawableLeft="@drawable/ic_bold_star"
+                                    android:text="4.5"
+                                    android:fontFamily="@font/noto_sans"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:fontFamily="@font/noto_sans"
+                                    android:layout_marginTop="4dp"
+
+                                    android:layout_gravity="center"
+                                    android:text="351 Ratings"
+                                    android:textSize="12sp"
+
+                                    android:textColor="@color/black"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+
+                                    android:gravity="center"
+                                    android:fontFamily="@font/noto_sans"
+                                    android:textSize="12sp"
+                                    android:drawablePadding="8dp"
+                                    android:drawableLeft="@drawable/ic_iconly_bold_bookmark"
+                                    android:text="137k"
+                                    android:drawableTint="@color/colorPrimary"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:fontFamily="@font/noto_sans"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_gravity="center"
+                                    android:textSize="12sp"
+                                    android:text="Bookmark"
+
+
+                                    android:textColor="@color/black"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center"
+                                    android:drawablePadding="8dp"
+                                    android:drawableLeft="@drawable/ic_gallary_image"
+                                    android:text="346"
+                                    android:fontFamily="@font/noto_sans"
+                                    android:gravity="center"
+
+                                    android:textColor="@color/black"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:fontFamily="@font/noto_sans"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="4dp"
+                                    android:textSize="12sp"
+                                    android:text="Photo"
+
+
+                                    android:textColor="@color/black"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Adults"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_baseline_remove_circle_outline_24"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="2"
+                            android:textSize="18sp"
+                            android:padding="2dp"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_baseline_add_circle_outline_24"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Children"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Age 2-12"
+
+
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_baseline_remove_circle_outline_24"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="2"
+                            android:textSize="18sp"
+                            android:padding="2dp"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_baseline_add_circle_outline_24"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/color_grey"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Available Dates"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/noto_sans"
+
+                            android:text="June 28-30"
+
+
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="Edit"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/color_grey"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Check-in Time"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/noto_sans"
+
+                            android:text="5:00 PM - 7:00PM"
+
+
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="Edit"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/noto_sans"
+
+                            android:text="Address"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="65 Brockport Spencerport Rd, Brockport NY 14420"
+
+
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:text="change"
+                        android:background="@drawable/orange_round_border"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/color_grey"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingStart="24dp"
+                    android:paddingTop="8dp"
+
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/noto_sans"
+                    android:text="Additional Activities Request"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="VIP/Private Event"
+                        android:layout_weight=".2"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Edit"
+                        android:fontFamily="@font/noto_sans"
+                        android:padding="8dp"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:text="Total : $116.19"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_close_grey_border"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Karaoke"
+                        android:layout_weight=".2"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Edit"
+                        android:padding="8dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:text="Total : $116.19"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:fontFamily="@font/noto_sans"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_close_grey_border"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="DJ/Live Band"
+                        android:layout_weight=".2"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:padding="8dp"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/noto_sans"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:text="Total : $116.19"
+                        android:layout_weight=".4"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_rectangle_grey"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Birthday Event"
+                        android:layout_weight=".2"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:padding="8dp"
+                        android:layout_weight=".4"
+                        android:fontFamily="@font/noto_sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_rectangle_grey"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_credit_card"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Card"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/noto_sans"
+
+                            android:text="Visa **** 4726"
+
+
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="Edit"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_promo_code"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Add Promo Code"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="4dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+
+                            android:visibility="gone"
+                            android:text=""
+
+
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="Edit"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingStart="24dp"
+                    android:paddingTop="8dp"
+
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/noto_sans"
+                    android:text="Price Details"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="14sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="$79.91 x 1 Night"
+
+
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="$79.91"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="14sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Vip Room x 1"
+
+
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="$15.00"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="14sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Karaoke x 1 hr"
+
+
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="$10.00"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="14sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Service Fee"
+
+
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="$11.28"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="14sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Total (USD)"
+
+
+                            android:textStyle="bold"
+
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="$116.19"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <TextView
+
+                    android:layout_gravity="right"
+                    android:padding="8dp"
+                    android:text="More info"
+                    android:layout_marginEnd="32dp"
+
+                    android:fontFamily="@font/noto_sans"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingStart="24dp"
+                    android:paddingTop="8dp"
+
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/noto_sans"
+                    android:text="Cancellation Policy"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight=".7"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:text="Free cancellation until 3:00 PM on May 27. After tat, cancel before 3:00 PM on May 28 and get a full refund, minus the first night and service fee."
+                    android:fontFamily="@font/noto_sans"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_circle" />
+
+                <TextView
+
+                    android:layout_gravity="left"
+                    android:padding="8dp"
+                    android:text="Learn more"
+                    android:layout_marginStart="32dp"
+
+                    android:fontFamily="@font/noto_sans"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_circle" />
+
+
+                <TextView
+                    android:layout_weight=".7"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:text="Make sure this host's cancellation policy works for you. Our Extenuating Circumstance policy may not cover travel disruptions caused by known events, like COVID-19, ore foreseeable events, like common severe weather."
+                    android:fontFamily="@font/noto_sans"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_circle" />
+
+                <TextView
+
+                    android:layout_gravity="left"
+                    android:padding="8dp"
+                    android:text="Learn more"
+                    android:layout_marginStart="32dp"
+
+                    android:fontFamily="@font/noto_sans"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_circle" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_gravity="bottom"
+            android:background="@color/black"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Total : $116.19"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/noto_sans"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Confirm Order"
+                android:padding="8dp"
+                android:gravity="center"
+                android:id="@+id/btn_confirm_order"
+                android:fontFamily="@font/noto_sans"
+                android:textColor="@color/white"
+                android:background="@drawable/orange_round"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

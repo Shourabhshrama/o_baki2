@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.kuberkings.obaki.screens.SignUp" />
+    </data>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/invitation_back"
+        tools:context=".screens.SignUp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_height="300dp"
+                android:src="@drawable/onboard_one"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="22dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/signUpText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/noto_sans"
+                    android:layout_marginTop="40dp"
+                    android:textSize="22sp"
+                    android:text="How hosting works"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginTop="16dp"
+
+                    android:id="@+id/btn_onboarding_next"
+                    android:text="Add your unique place, add how many people can eat, add custom menu, dish specialties, business schedule and more."
+                    android:fontFamily="@font/noto_sans"
+                    android:textColor="@color/text_color_dark_grey"
+
+                    android:layout_height="wrap_content"/>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:orientation="horizontal"
+                     android:layout_height="wrap_content">
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:src="@drawable/ic_promo_code"
+                         android:layout_height="wrap_content"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:padding="8dp"
+                         android:text="Manage your customer and income in one easy dashboard straight from the app"
+                         android:layout_height="wrap_content"/>
+
+                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_promo_code"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:padding="8dp"
+                        android:text="Use our promotion system to push your business ahead of the competition"
+                         android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</layout>

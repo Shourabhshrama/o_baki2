@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_shape"
+     android:padding="8dp"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_gravity="center|top"
+        android:src="@drawable/ic_order_sucesss"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="You Place The Order Successfully"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="You placed the order successfully. You will get your order within 25 minutes. Thanks for using our services. Enjoy your food."
+        android:textSize="14sp"
+
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Keep Browsing Food"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:background="@drawable/contact_host_back"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/noto_sans"
+
+            android:text="Total Order"
+            android:textSize="18sp"
+
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/noto_sans"
+            android:text="$116.19"
+            android:textSize="18sp"
+
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:id="@+id/btn_continue_order_success"
+        android:text="@string/continue_text"
+        android:textColor="@color/white"
+        android:background="@drawable/black_round"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+

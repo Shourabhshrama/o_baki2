@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.kuberkings.obaki.screens.SignUp" />
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        tools:context=".screens.SignUp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="22dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/signUpText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/noto_sans"
+                    android:layout_marginTop="60dp"
+                    android:lines="2"
+android:layout_marginBottom="50dp"
+                    android:textSize="22sp"
+                    android:text="Let's Begin. Where \nyou from?"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+
+                <Spinner
+                    android:id="@+id/spinnerLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:layout_toRightOf="@+id/piotxt5"
+                    android:layout_marginBottom="50dp"
+                    style="@style/spinner_style"
+                    android:dropDownVerticalOffset="-53dp"
+                    android:spinnerMode="dropdown"
+                    android:drawSelectorOnTop="true"
+
+                    android:prompt="@string/select_country" />
+
+                <Spinner
+                    android:id="@+id/spinnerCoutry"
+
+                    android:layout_marginBottom="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:layout_toRightOf="@+id/piotxt5"
+
+                    style="@style/spinner_style"
+                    android:dropDownVerticalOffset="-53dp"
+                    android:spinnerMode="dropdown"
+                    android:drawSelectorOnTop="true"
+
+                    android:prompt="@string/select_country" />
+
+
+                <Button
+                    android:id="@+id/btn_fill_country_info"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/black_round"
+                    android:fontFamily="@font/noto_sans"
+                    android:padding="16dp"
+                    android:text="Next"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</layout>

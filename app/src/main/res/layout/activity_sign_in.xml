@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.kuberkings.obaki.screens.SignUp" />
+    </data>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".screens.SignUp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/login_back"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_icon2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="22dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/signUpText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/noto_sans"
+                    android:layout_marginTop="40dp"
+
+
+
+                    android:textSize="22sp"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/signUpText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/noto_sans"
+
+
+
+                    android:textSize="16sp"
+                    android:text="@string/sign_in_to_continue"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/mobileNumberText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/noto_sans"
+                    android:textSize="11sp"
+                    android:text="@string/mobile_number"
+                    android:textColor="@color/black"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="2dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_height="wrap_content">
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+app:ccp_textSize="14sp"
+                        app:ccp_showFlag="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".7"
+                        android:background="@color/white"
+                        android:onClick="onCountryPickerClick"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="4dp"
+                        android:textSize="14sp"
+                        android:inputType="phone"
+                        android:hint="enter mobile number"
+                        android:background="@color/white"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:padding="16dp"
+                    android:id="@+id/btn_sign_in"
+                    android:text="@string/sign_in"
+
+                    android:textColor="@color/white"
+                    android:background="@drawable/black_round"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="50dp"
+
+                        android:layout_gravity="center"
+
+
+                        android:layout_margin="8dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/google_icon"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView
+                        android:layout_width="50dp"
+
+
+                        android:layout_margin="8dp"
+
+
+                        android:layout_gravity="center"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fb_icon"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView
+                        android:layout_width="50dp"
+
+                        android:layout_margin="8dp"
+
+
+                        android:layout_gravity="center"
+                        android:layout_height="50dp"
+                        android:src="@drawable/twitter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/noto_sans"
+
+                        android:layout_margin="4dp"
+
+                        android:textSize="16sp"
+                        android:text="@string/dont_have_account"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/allraadyHaveAcccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_margin="4dp"
+
+                        android:fontFamily="@font/noto_sans"
+
+                        android:textSize="16sp"
+                        android:text="@string/sign_up"
+                        android:textColor="@color/colorPrimary"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</layout>

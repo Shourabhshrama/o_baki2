@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.kuberkings.obaki.screens.filter.FilterActivity" />
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+         >
+        <LinearLayout
+            android:layout_width="match_parent"
+                  android:orientation="vertical"
+
+
+            android:layout_height="match_parent">
+
+
+
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/backImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:autoMirrored="true"
+                    android:layout_centerVertical="true"
+
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/left_circle" />
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    android:text="Filters"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear All"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginRight="8dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:src="@drawable/chef"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+
+                android:text="Choose a base"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:src="@drawable/chef"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/filterCat"
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+
+                android:textStyle="bold"
+                android:text="Choose dietary options"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(you may choose a few items)"
+
+                android:layout_marginLeft="8dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:src="@drawable/chef"
+                android:layout_alignParentEnd="true"
+                />
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/filterSubCat"
+            android:layout_width="match_parent"
+            android:padding="12dp"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:text="Price Range"/>
+
+
+        <com.jem.rubberpicker.RubberRangePicker
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:layout_height="wrap_content"
+         app:minValue="20"
+        app:maxValue="80"
+        app:elasticBehavior="cubic"
+        app:dampingRatio="0.3"
+        app:stiffness="300"
+            android:padding="12dp"
+            android:background="@drawable/gray_round_border"
+        app:stretchRange="24dp"
+        app:defaultThumbRadius="16dp"
+        app:normalTrackWidth="4dp"
+        app:highlightTrackWidth="8dp"
+        app:normalTrackColor="#AAAAAA"
+        app:highlightTrackColor="#FE9B02"
+        app:defaultThumbInsideColor="#FFF"
+        app:highlightDefaultThumbOnTouchColor="#FE9B02"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:layout_weight=".6"
+                android:text="$10-$1,000+"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp"
+                android:layout_weight=".4"
+
+                android:padding="12dp"
+                android:text="The average nightly price is $134"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:text="Price Range"/>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="12sp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:layout_weight=".6"
+                    android:text="House"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="12sp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:layout_weight=".6"
+                    android:text="Apartment"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="12sp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:layout_weight=".6"
+                    android:text="Bed and breakfast"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="12sp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:layout_weight=".6"
+                    android:text="How many guest"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btn_next"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/black_round"
+android:gravity="center"
+                android:padding="16dp"
+                android:text="Apply Filters"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

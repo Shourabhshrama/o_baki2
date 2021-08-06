@@ -1,0 +1,130 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/dish"
+
+                android:scaleType="centerCrop"
+
+                android:layout_gravity="center|top"
+                android:layout_height="120dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/round_transaprent"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_star_24"
+                    android:text="4.5"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:text="Leslie A."
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="14sp"
+            android:textColor="#1D1F21"
+            android:gravity="start|bottom"
+            android:layout_height="match_parent"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:text="Real Italian Recipes for the start of autumn"
+            android:textColor="#1D1F21"
+            android:textStyle="bold"
+            android:lines="2"
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"  android:textSize="18sp"
+
+            android:layout_height="match_parent"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:text="$5.0"
+
+                android:layout_weight="1"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom=
+                    "8dp"
+                android:textSize="12sp"
+                android:textColor="#FE9B02"
+                android:gravity="start|bottom"
+                android:layout_height="match_parent"
+                />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:text="$6.0"
+                android:layout_weight="1"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textColor="#747474"
+                android:gravity="start|bottom"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:text="Leslie A."
+                android:paddingRight="8dp"
+                android:layout_weight="1"
+                android:paddingLeft="8dp"
+                android:src="@drawable/ic_baseline_shopping_bag_24"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:textColor="#1D1F21"
+                android:gravity="start|bottom"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

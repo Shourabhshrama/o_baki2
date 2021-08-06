@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+android:layout_alignParentLeft="true"
+            android:id="@+id/orderProfile"
+
+
+            android:src="@drawable/chef"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/orderProfile"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/reviewUsername"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentLeft="true"
+                    android:text="Local Vibe"
+
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reviewUsername"
+
+                    android:layout_alignParentLeft="true"
+                    android:text="Dubai International City, T-9001, 2.2km Away"
+
+
+                    android:textSize="12sp" />
+
+                <ImageView
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:max="5"
+                    android:numStars="5"
+                    android:padding="8dp"
+android:src="@drawable/ic_down_circle"
+                    android:scaleX="1"
+
+                    android:scaleY="1"
+                    android:text="10 June, 2021"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_below="@id/orderProfile"
+          android:layout_marginTop="8dp"
+          android:id="@+id/rrOrder"
+          android:layout_height="wrap_content">
+          <LinearLayout
+              android:layout_width="wrap_content"
+           android:layout_alignParentLeft="true"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/reviewUsername"
+
+                  android:layout_alignParentLeft="true"
+                  android:text="STATUS"
+
+
+                  android:textSize="12sp" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:id="@+id/orderStutus"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/reviewUsername"
+
+                  android:layout_alignParentLeft="true"
+                  android:text="Upcoming"
+
+                  android:textColor="@color/black"
+                  android:textSize="12sp" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_alignParentRight="true"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/reviewUsername"
+
+                  android:layout_alignParentLeft="true"
+                  android:text="PURCHASE DATE"
+
+
+                  android:textSize="12sp" />
+              <TextView
+                  android:layout_width="wrap_content"
+
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/reviewUsername"
+
+                  android:layout_alignParentLeft="true"
+                  android:text="16/06/2021, 14:00"
+                  android:textColor="@color/black"
+
+                  android:textSize="12sp" />
+          </LinearLayout>
+
+      </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/rrOrder"
+android:id="@+id/rrOrder2"
+           android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+android:background="@drawable/gray_round"
+                    android:gravity="center"
+                    android:drawablePadding="8dp"
+                 android:drawableLeft="@drawable/ic_group_17867"
+                    android:layout_alignParentLeft="true"
+                    android:text="Fish, Pork"
+
+android:padding="8dp"
+                    android:textSize="12sp" />
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_group_17867"
+                    android:background="@drawable/gray_round"
+                    android:gravity="center"
+                    android:drawablePadding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:text="4 Person"
+                    android:textColor="@color/black"
+
+                    android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_order_cancel"
+            android:layout_below="@+id/rrOrder2"
+            android:padding="16dp"
+android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_margin="16dp"
+            android:background="@drawable/cancel_back_round"
+
+
+            android:text="Cancel Booking"
+            android:textColor="#F64A50" />
+        <TextView
+            android:id="@+id/btn_order_re_order"
+            android:layout_below="@+id/rrOrder2"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="@drawable/reorder_back_round"
+
+
+            android:text="Re-order"
+            android:textColor="#FF9CA0" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

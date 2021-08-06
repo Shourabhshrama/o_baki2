@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.kuberkings.obaki.screens.ChefCheckoutActivity" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.RestaurentDetailActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="100dp"
+                android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+
+
+
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:padding="8dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:padding="2dp"
+
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/btnBtn"
+                            android:src="@drawable/left_circle"
+                            android:layout_height="32dp" />
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:padding="2dp"
+                            android:layout_toLeftOf="@+id/rest_detail_save"
+                            app:tint="@color/white"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_share"
+                            android:layout_height="32dp" />
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:padding="2dp"
+                            android:layout_marginRight="20dp"
+                            app:tint="@color/white"
+                            android:id="@+id/rest_detail_save"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_iconly_bold_bookmark"
+                            android:layout_height="32dp" />
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textSize="30sp"
+android:layout_marginTop="8dp"
+                    android:fontFamily="@font/noto_sans"
+                    android:text="Checkout"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="12dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="12dp"
+                    android:textStyle="bold"
+
+                    android:text="Choose what your chef will cook"
+
+
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:src="@drawable/chef_special_two"
+                        android:layout_margin="8dp"
+
+                        />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:src="@drawable/chef_speical_three" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:src="@drawable/chef_special_four" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:src="@drawable/chef_special_one" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_weight=".7"
+                        android:id="@+id/btn_chef_extra"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:src="@drawable/ic_baseline_add_circle_24" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="12dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="12dp"
+                    android:textStyle="bold"
+
+                    android:text="Will you buy your own supply?"
+
+
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="No"
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+                        android:background="@drawable/orange_round_border"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:padding="8dp"
+                        android:background="@drawable/orange_round"
+                        android:gravity="center"
+                        android:text="No"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/noto_sans"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="How many hrs"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="Edit"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Select Dates"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/noto_sans"
+
+                            android:text="June 28-30"
+
+
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="Edit"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/noto_sans"
+
+                            android:text="Location to meet"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/noto_sans"
+                            android:text="65 Brockport Spencerport Rd, Brockport NY 14420"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:text="change"
+                        android:background="@drawable/orange_round_border"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/map"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="32dp"
+                    android:background="@drawable/rounded_shape"
+                    android:layout_height="200dp"/>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_credit_card"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Card"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/noto_sans"
+
+                            android:text="Visa **** 4726"
+
+
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="Edit"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_promo_code"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Add Promo Code"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="4dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:layout_marginLeft="4dp"
+                            android:textSize="12sp"
+
+                            android:visibility="gone"
+                            android:text=""
+
+
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="Edit"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingStart="24dp"
+                    android:paddingTop="8dp"
+
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/noto_sans"
+                    android:text="Price Details"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="14sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="$79.91 x 1 Night"
+
+
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="$79.91"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="14sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Vip Room x 1"
+
+
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="$15.00"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="14sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Karaoke x 1 hr"
+
+
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="$10.00"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="14sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Service Fee"
+
+
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="$11.28"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight=".3"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:padding="8dp"
+                            android:textSize="14sp"
+
+                            android:fontFamily="@font/noto_sans"
+                            android:text="Total (USD)"
+
+
+                            android:textStyle="bold"
+
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:padding="8dp"
+                        android:text="$116.19"
+                        android:fontFamily="@font/noto_sans"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:src="@drawable/right_circle" />
+                </LinearLayout>
+
+                <TextView
+
+                    android:layout_gravity="right"
+                    android:padding="8dp"
+                    android:text="More info"
+                    android:layout_marginEnd="32dp"
+
+                    android:fontFamily="@font/noto_sans"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:paddingStart="24dp"
+                    android:paddingTop="8dp"
+
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/noto_sans"
+                    android:text="Cancellation Policy"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight=".7"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:text="Free cancellation until 3:00 PM on May 27. After tat, cancel before 3:00 PM on May 28 and get a full refund, minus the first night and service fee."
+                    android:fontFamily="@font/noto_sans"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_circle" />
+
+                <TextView
+
+                    android:layout_gravity="left"
+                    android:padding="8dp"
+                    android:text="Learn more"
+                    android:layout_marginStart="32dp"
+
+                    android:fontFamily="@font/noto_sans"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_circle" />
+
+
+                <TextView
+                    android:layout_weight=".7"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:text="Make sure this host's cancellation policy works for you. Our Extenuating Circumstance policy may not cover travel disruptions caused by known events, like COVID-19, ore foreseeable events, like common severe weather."
+                    android:fontFamily="@font/noto_sans"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_circle" />
+
+                <TextView
+
+                    android:layout_gravity="left"
+                    android:padding="8dp"
+                    android:text="Learn more"
+                    android:layout_marginStart="32dp"
+
+                    android:fontFamily="@font/noto_sans"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_circle" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_gravity="bottom"
+            android:background="@color/black"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Total : $116.19"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/noto_sans"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Confirm Order"
+                android:padding="8dp"
+                android:gravity="center"
+                android:id="@+id/btn_confirm_order"
+                android:fontFamily="@font/noto_sans"
+                android:textColor="@color/white"
+                android:background="@drawable/orange_round"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

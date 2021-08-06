@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.kuberkings.obaki.screens.SignUp" />
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        tools:context=".screens.SignUp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="22dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/signUpText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/noto_sans"
+                    android:layout_marginTop="60dp"
+                    android:lines="2"
+
+                    android:textSize="22sp"
+                    android:text="Get Your Profile \nSetup Ahead"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/allraadyHaveAcccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+
+                    android:textSize="14sp"
+                    android:text="FULL NAME"
+                   android:textColor="@color/black"
+
+                    />
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/otp_view"
+
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/tv_otp"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+
+
+                    android:hint=""
+
+                    android:textColor="@color/black"
+                    app:itemCount="4"
+                    app:lineColor="@color/black"
+                    app:viewType="line" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:text="USER NAME"
+
+
+                    />
+                <androidx.appcompat.widget.AppCompatEditText
+
+
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/tv_otp"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+
+
+                    android:hint=""
+
+                    android:textColor="@color/black"
+                    app:itemCount="4"
+                    app:lineColor="@color/black"
+                    app:viewType="line" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:text="PASSWORD"
+
+
+                    />
+                <androidx.appcompat.widget.AppCompatEditText
+
+
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/tv_otp"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+
+                     android:hint=""
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    app:itemCount="4"
+                    app:lineColor="@color/black"
+                    app:viewType="line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content">
+<CheckBox
+    android:layout_width="wrap_content"
+    android:text="I agree with"
+    android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/noto_sans"
+                        android:textColor="@color/colorPrimary"
+                        android:text=" terms and condition"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_fill_user_info"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/black_round"
+                    android:fontFamily="@font/noto_sans"
+                    android:padding="16dp"
+                    android:text="Next"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</layout>

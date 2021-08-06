@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">O Baki</string>
+    <string name="logout_message">Are  you sure you want to logout</string>
+    <string name="logout">logout</string>
+    <string name="cancel">cancel</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_to_continue">Sign up to Continue</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="continue_text">Continue</string>
+    <string name="term_text">By creating the account you agree the</string>
+    <string name="term_text2">" Terms of Use."</string>
+    <string name="onready_have_account_text"><u>I already have an account</u></string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="dont_have_account">Dont have any account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_bottom_navigation">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="txt_smart_dialog">You Place The Order Successfully</string>
+    <string name="txt_alert">You placed the order successfully. You will get your order within 25 minutes. Thanks for using our services. Enjoy your food.</string>
+</resources>

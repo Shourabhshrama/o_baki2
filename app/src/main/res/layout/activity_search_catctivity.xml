@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.category.SearchCatctivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="32dp"
+            android:padding="2dp"
+android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnBtn"
+            android:src="@drawable/left_circle"
+            android:layout_height="32dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            android:layout_toLeftOf="@+id/rest_detail_save"
+            android:layout_toRightOf="@+id/btnBtn"
+
+            android:background="@drawable/round_gray_light"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/ccp"
+                android:src="@drawable/search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+
+                android:background="@color/background_chat_color"
+                android:hint="Search Category"
+                android:inputType="phone"
+                android:padding="4dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rest_detail_save"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_iconly_bold_notification" />
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        app:layout_scrollFlags="enterAlways"
+        android:layout_below="@+id/orders"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:tabMode="fixed"
+
+        app:tabSelectedTextColor="@color/black"
+
+
+        android:background="@color/white"
+        app:tabGravity="fill"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
